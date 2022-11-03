@@ -1,0 +1,50 @@
+
+public class Hw220901 {
+
+	public static void main(String[] args) {
+
+		System.out.println("============숙제1==============");
+		
+		for (int y = 1; y <= 10; y++) {
+			for (int x = 1; x <= 11; x++) {
+				if ((y>=11-x&&x<=y+1)&&y>4)
+					System.out.printf("%c", '●');
+//				else if (x == 1)
+//					System.out.printf("%c", '○');
+				else
+					System.out.printf("%c", '┼');
+			}
+			System.out.println();
+		}
+
+		System.out.println("============숙제2==============");
+		
+		
+		for(int y = 1; y<=11; y++) {
+			for(int x= 1; x<=11; x++) {
+				if (x==1&&y==1)
+					System.out.printf("%c",'┌');
+				else if(y==11&&x==1)
+					System.out.printf("%c",'└');
+				else if(x==11&&y==11)
+					System.out.printf("%c",'┘');
+				else if (x==11&&y==1)
+					System.out.printf("%c",'┐');
+				else if (y==1)
+					System.out.printf("%c",'┬');
+				else if (x==1)
+					System.out.printf("%c",'├');
+				else if (x==11)
+					System.out.printf("%c",'┤');
+				else if(y==11)
+					System.out.printf("%c",'┴');
+				else
+					System.out.printf("%c",'┼');
+	
+			}
+		System.out.println();
+		}
+
+	}
+
+}
